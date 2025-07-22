@@ -151,7 +151,7 @@ IS_SEND_MOVIE_UPDATE = is_enabled(
 )  # Don't Change It ( If You Want To Turn It On Then Turn It On By Commands) We Suggest You To Make It Turn Off If You Are Indexing Files First Time.
 MAX_BTN = int(environ.get("MAX_BTN", "8"))
 AUTO_DELETE = is_enabled("AUTO_DELETE", True)
-DELETE_TIME = int(environ.get("DELETE_TIME", 300))
+DELETE_TIME = int(environ.get("DELETE_TIME", 60))
 IMDB = is_enabled("IMDB", False)
 FILE_CAPTION = environ.get("FILE_CAPTION", f"{script.FILE_CAPTION}")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
@@ -171,7 +171,7 @@ if "DYNO" in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("FQDN", "https://bold-josey-priyanshukumawat2k25-db51af21.koyeb.app/")
+URL = environ.get("FQDN", "https://democratic-thomasin-1wwss-7521d958.koyeb.app/")
 
 # Commands
 admin_cmds = [
